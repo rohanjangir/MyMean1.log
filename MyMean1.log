@@ -1,0 +1,305 @@
+var a;
+undefined
+typeof a;
+"undefined"
+a=100;
+100
+a="100";
+"100"
+a=`100`;
+"100"
+typeof a;
+"string"
+a=100;
+100
+typeof a;
+"number"
+a=100.20;
+100.2
+typeof a;
+"number"
+a="100.20";
+"100.20"
+typeof a;
+"string"
+a=10000;
+10000
+typeof a;
+"number"
+a=100/0;
+Infinity
+typeof a;
+"number"
+isFinite(a);
+false
+isFinite(a)?a:0;
+0
+a=100 - "one"
+NaN
+a=100 - "one";
+NaN
+typeof a;
+"number"
+isFinite(a);
+false
+isNaN(a);
+true
+isNaN(a)?0:a;
+0
+a="Hi I am Rohan Jangir would you be friends with me";
+"Hi I am Rohan Jangir would you be friends with me"
+a=`Hi I am Rohan Jangir would you be friends with me`;
+"Hi I am Rohan Jangir would you be friends with me"
+typeof a;
+"string"
+var a=100;
+undefined
+var b=200;
+undefined
+"a is "+a+" and b is "+b;
+"a is 100 and b is 200"
+`a is ${a} and b is ${b}`;
+"a is 100 and b is 200"
+typeof a;
+"number"
+typeof b;
+"number"
+a;
+100
+b;
+200
+var name="Rohan";
+undefined
+typeof name;
+"string"
+name.length;
+5
+var att=true;
+undefined
+typeof att;
+"boolean"
+10+true;
+11
+typeof true;
+"boolean"
+x=10000;
+10000
+typeof x;
+"number"
+function show(){
+    console.log("I am show");
+}
+undefined
+typeof show;
+"function"
+function show(){
+ h=1000;
+    console.log("I am show");
+}
+undefined
+show();
+VM965:3 I am show
+undefined
+h;
+1000
+function show(){
+ h=1000;
+    console.log("I am show");
+}
+undefined
+show instanceof show;
+false
+function show(){}
+undefined
+function show(){
+var h1=1000;
+var gg=2000;
+console.log("I am show");
+}
+undefined
+show();
+VM1198:4 I am show
+undefined
+function show(){
+var h1=1000;
+var gg=2000;
+console.log("I am show",h1,gg);
+}
+undefined
+show();
+VM1245:4 I am show 1000 2000
+undefined
+h1;
+VM1271:1 Uncaught ReferenceError: h1 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1271:1
+function show(){
+// var v;
+console.log("Befor If",v);
+var h1=1000;
+var gg=2000;
+if(10>2){
+var v=88;  //v = 88;
+}
+console.log("I am show",h1,gg);
+console.log("After If",v);
+}
+undefined
+show();
+VM1409:3 Befor If undefined
+VM1409:9 I am show 1000 2000
+VM1409:10 After If 88
+undefined
+function show(){
+
+console.log("Befor If",v);
+var h1=1000;
+var gg=2000;
+if(10>2){
+var v=88; 
+console.log("Inside If",v);
+}
+console.log("I am show",h1,gg);
+console.log("After If",v);
+}
+undefined
+show();
+VM1488:3 Befor If undefined
+VM1488:8 Inside If 88
+VM1488:10 I am show 1000 2000
+VM1488:11 After If 88
+undefined
+function show(){
+
+// console.log("Befor If",v);
+var h1=1000;
+var gg=2000;
+if(10>2){
+var v=88;  
+console.log("Inside If",v);
+}
+console.log("I am show",h1,gg);
+// console.log("After If",v);
+}
+undefined
+show();
+VM1602:8 Inside If 88
+VM1602:10 I am show 1000 2000
+undefined
+var fruits = "orange";
+undefined
+var fruits = ["apple","orange","mango"];
+undefined
+typeof fruits;
+"object"
+var fruit = "orange";
+undefined
+var fruits = ["apple","orange","mango"];
+undefined
+typeof fruits;
+"object"
+typeof fruit;
+"string"
+fruits;
+(3) ["apple", "orange", "mango"]
+fruit;
+"orange"
+fruits instanceof array;
+VM1851:1 Uncaught ReferenceError: array is not defined
+    at <anonymous>:1:19
+(anonymous) @ VM1851:1
+fruits instanceof Array;
+true
+typeof array;
+"undefined"
+typeof Array;
+"function"
+var obj={};
+    
+    
+undefined
+typeof obj;
+"object"
+obj instanceof Object;
+true
+fruits instanceof Array;
+true
+fruits instanceof Object;
+true
+var obj={}; // object literal
+undefined
+obj.id=1001;
+1001
+var y=[1000,"Rohan",true];
+undefined
+typeof y;
+"object"
+y[1];
+"Rohan"
+y[0];
+1000
+y[2];
+true
+obj.id;
+1001
+var obj2={id:1001,name:'Rohan'};
+undefined
+obj2.name;
+"Rohan"
+obj2.id;
+1001
+obj.salary=9999;
+9999
+obj2.salary=9999;
+9999
+obj2;
+{id: 1001, name: "Rohan", salary: 9999}
+delete obj2.salary;
+true
+obj2;
+{id: 1001, name: "Rohan"}
+const userOperations={
+add(){
+}
+}
+var userOperation={
+add(){
+}
+}
+undefined
+const PI=3.14;
+undefined
+PI;
+3.14
+PI++;
+VM2637:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:3
+(anonymous) @ VM2637:1
+const arr=[10,20,30];
+undefined
+arr.push(500);
+4
+arr;
+(4) [10, 20, 30, 500]
+arr=[40,50];
+VM2736:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:4
+(anonymous) @ VM2736:1
+arr.push(500,444);
+6
+arr;
+(6) [10, 20, 30, 500, 500, 444]
+arr.pop(500,444);
+444
+arr;
+(5) [10, 20, 30, 500, 500]
+arr.pop(500);
+500
+arr;
+(4) [10, 20, 30, 500]
+const obj3={};
+undefined
+obj3.id=9999;
+9999
+obj3;
+{id: 9999}
